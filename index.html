@@ -1,76 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earth</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
     <link rel="stylesheet" href="styles.css">
-    <head>
-        <style>
-            body {
-                background-color: #AEBDCA;
-        }
-           hr {
-                background-color:white;
-        }
-    
-        </style>
-    </head>
-    
 </head>
 <body>
-    <style>
-        .circle {
-            border-radius: 100%;
-        }
-    </style>
-    <img src="profile.jpg" class="circle" alt="This is Earth" srcset=""style="width: 20%; height: auto;">
-    
-    <h1>Jittipon Earth</h1>
-    <a href = "https://www.google.co.th/"> ไปยังเว็บไซต์ </a>
-    <br>
-    <a href = "contact.html"> Contact </a>
-
-    <hr style="border-style: dashed double none; height: 20px">
-
-    <h3>ประสบการณ์การทำงาน</h3>
-    <!--<ul>
-      <li>2018 - 2018 Intern at Comlab</li>
-      <li>2019 - 2020 Intern at Xzign Studio</li>
-      <li>2020 - 2021 Editor at Xzign Studio</li>
-      <li>2021 - Present Furfunny co.,ltd</li>
-    </ul> -->
-
-    <!-- ทำให้ list นำเสนอเป็น table-->
-    <table>
-        <thead>
-            <tr>
-                <th>
-                Year
-                </th>
-                 <th>
-                Work Place
-                </th>
-            </tr>
-        </thead>
-        
-        <tr>
-            <td>2018 - 2018</td>
-            <td>Intern at Comlab</td>
-        </tr>
-        <tr>
-            <td>2019 - 2020</td>
-            <td>Intern at Xzign Studio</td>
-        </tr>
-        <tr>
-            <td>2020 - 2021</td>
-            <td>Editor at Xzign Studio</td>
-        </tr>
-        <tr>
-            <td>2021 - Present</td>
-            <td>Furfunny co.,ltd</td>
-        </tr>
-    </table>
-
+    <div>
+        <div class="quiz-container">
+             <h1></h1>
+             <p id="question">PIM ย่อมาจากอะไร ?</p>
+             <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+             <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
+             <button class="button" onclick="checkAnswer('c')">C) พิม</button>
+             <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
+             <p id="result"></p>
+         </div>
+         <div class="quiz-container">
+              <h1></h1>
+              <p id="question">2. PIM เริ่มก่อตั้งเมื่อปีใด ?</p>
+              <button class="button" onclick="checkAnswer2('a')">A) 2565</button>
+              <button class="button" onclick="checkAnswer2('b')">B) 2560</button>
+              <button class="button" onclick="checkAnswer2('c')">C) 2555</button>
+              <button class="button" onclick="checkAnswer2('d')">D) 2550</button>
+              <p id="result2"></p>
+          </div>
+          
+       </div>       
+       <p id="result3"></p>
+   <script src="index.js"></script>
 </body>
 </html>
